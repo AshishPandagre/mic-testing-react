@@ -1,4 +1,5 @@
 import { useCallback, useState } from "react";
+import Boo from "./Boo";
 import Child from "./Child";
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
     <div>
       {value} <br/>
       <button onClick={() => setAllowChange(!allowChange)}>allowChange</button> <br/>
-      <Child data={69} click={increment}/>
+      <Child data={69} click={increment}/> <br/> <br/> <br/> 
+      BOO COMPONENT :
+      <Boo/>
     </div>
   );
 }
